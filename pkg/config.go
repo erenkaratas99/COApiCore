@@ -37,6 +37,15 @@ var cfgs = map[string]AppConfigs{
 		Port:           ":8001",
 		BaseUrl:        "http://127.0.0.1",
 	},
+	"OrderServicePair": {
+		Env:            "dev",
+		MongoDuration:  time.Second * 10,
+		MongoClientURI: "mongodb+srv://root:root1234@practice.ytpl2.mongodb.net/practice?retryWrites=true&w=majority",
+		DBName:         "OrderDB",
+		ColName:        "orders",
+		Port:           ":8000",
+		BaseUrl:        "http://127.0.0.1",
+	},
 }
 
 func GetAppConfig(app string) (*AppConfigs, error) {
