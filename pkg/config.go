@@ -40,7 +40,7 @@ var cfgs = map[string]AppConfigs{
 	"OrderServicePair": {
 		Env:            "dev",
 		MongoDuration:  time.Second * 10,
-		MongoClientURI: "mongodb+srv://root:root1234@practice.ytpl2.mongodb.net/practice?retryWrites=true&w=majority",
+		MongoClientURI: "-",
 		DBName:         "OrderDB",
 		ColName:        "orders",
 		Port:           ":8000",
