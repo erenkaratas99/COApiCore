@@ -37,3 +37,4 @@ func GetMongoDbCollection(client *mongo.Client, dbName string, colName string) (
 	col := client.Database(dbName).Collection(colName)
 	return col, nil
 }
+
